@@ -56,7 +56,7 @@ The calibration results will be saved in the `output` directory:
 
 All scripts use variables instead of command-line arguments for configuration. You can modify these variables at the top of each script:
 
-### In `capture_calibration_images.py`:
+### In `Capture_images.py`:
 
 ```python
 CAMERA_ID = 0  # Camera ID (usually 0 for built-in webcam)
