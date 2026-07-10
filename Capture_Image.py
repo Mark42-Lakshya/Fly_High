@@ -6,7 +6,7 @@ while True:
     cv2.imshow("Frame", frame)
     key = cv2.waitKey(1)
     if key == ord('s'):
-        cv2.imwrite(f"calibration_images3/calib_{count}.jpg", frame)
+        cv2.imwrite(f"calibration_images/calib_{count}.jpg", frame)
         count += 1
         print("Saved")
     if key == 27:
