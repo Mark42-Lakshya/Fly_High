@@ -51,3 +51,25 @@ The calibration results will be saved in the `output` directory:
 - `camera_matrix.txt`: Camera matrix in text format
 - `distortion_coefficients.txt`: Distortion coefficients in text format
 - Undistorted versions of the calibration images (if enabled)
+
+- ## Configuration
+
+All scripts use variables instead of command-line arguments for configuration. You can modify these variables at the top of each script:
+
+### In `capture_calibration_images.py`:
+
+```python
+CAMERA_ID = 0  # Camera ID (usually 0 for built-in webcam)
+CHESSBOARD_SIZE = (9, 6)  # Number of inner corners per chessboard row and column
+OUTPUT_DIRECTORY = 'calibration_images'  # Directory to save calibration images
+```
+
+### In `camera_calibration.py`:
+
+```python
+CHESSBOARD_SIZE = (9, 6)  # Number of inner corners per chessboard row and column
+SQUARE_SIZE = 2.5  # Size of a square in centimeters
+CALIBRATION_IMAGES_PATH = 'calibration_images/*.jpg'  # Path to calibration images
+OUTPUT_DIRECTORY = 'output'  # Directory to save calibration results
+SAVE_UNDISTORTED = True  # Whether to save undistorted images
+```
