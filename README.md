@@ -105,7 +105,7 @@ After calibration, you can expect:
 2. **Poor Calibration Results**: Use more images from different angles and positions
 3. **Camera Not Found**: Check the CAMERA_ID parameter (usually 0 for built-in webcams)
 
-4. ## Acknowledgments
+## Acknowledgments
 
 - OpenCV for providing the computer vision algorithms
 - The OpenCV documentation for the camera calibration tutorial
