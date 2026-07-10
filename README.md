@@ -33,8 +33,8 @@ python capture_images.py
 ```
 
 Controls:
-- Press `c` to capture an image
-- Press `q` or Escape to quit
+- Press `s` to capture an image
+- Press `esc` to quit
 
 The images will be saved in the `calibration_images` directory.
 
