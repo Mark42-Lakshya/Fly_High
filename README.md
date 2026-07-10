@@ -30,7 +30,7 @@ pip install -r requirements.txt
 You need multiple images of a chessboard pattern from different angles and positions. The script `capture_images.py` helps you capture these images:
 
 ```bash
-python capture_calibration_images.py
+python capture_images.py
 ```
 
 Controls:
