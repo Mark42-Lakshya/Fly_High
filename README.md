@@ -73,3 +73,39 @@ CALIBRATION_IMAGES_PATH = 'calibration_images/*.jpg'  # Path to calibration imag
 OUTPUT_DIRECTORY = 'output'  # Directory to save calibration results
 SAVE_UNDISTORTED = True  # Whether to save undistorted images
 ```
+## How It Works
+
+### Camera Calibration Process
+
+1. **Image Collection**: Capture multiple images of a chessboard pattern from different angles
+2. **Corner Detection**: Detect the chessboard corners in each image
+3. **Calibration**: Use the detected corners to compute the camera matrix and distortion coefficients
+4. **Undistortion**: Apply the calibration to remove lens distortion from images
+
+### Camera Model
+
+The camera model used is the pinhole camera model with radial and tangential distortion:
+
+- **Camera Matrix**: A 3x3 matrix containing the focal lengths and optical centers
+- **Distortion Coefficients**: A vector containing the radial and tangential distortion coefficients
+
+## Example Results
+
+After calibration, you can expect:
+
+1. **Undistorted Images**: Straight lines in the real world will appear straight in the images
+2. **Accurate Measurements**: You can measure distances and sizes in the real world from the images
+3. **3D Reconstruction**: You can use the calibration for 3D reconstruction or augmented reality applications
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Chessboard Not Detected**: Make sure the entire chessboard is visible in the image and well-lit
+2. **Poor Calibration Results**: Use more images from different angles and positions
+3. **Camera Not Found**: Check the CAMERA_ID parameter (usually 0 for built-in webcams)
+
+4. ## Acknowledgments
+
+- OpenCV for providing the computer vision algorithms
+- The OpenCV documentation for the camera calibration tutorial
