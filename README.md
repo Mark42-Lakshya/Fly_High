@@ -8,7 +8,6 @@ This toolkit includes:
 
 1. **Image Capture Tool**: Capture calibration images from your camera
 2. **Calibration Tool**: Process the calibration images to compute camera parameters
-3. **Live Undistortion**: Apply the calibration to a live video feed
 
 ## Requirements
 
