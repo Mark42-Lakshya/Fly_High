@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 ### Step 1: Capture Calibration Images
 
-You need multiple images of a chessboard pattern from different angles and positions. The script `capture_calibration_images.py` helps you capture these images:
+You need multiple images of a chessboard pattern from different angles and positions. The script `capture_images.py` helps you capture these images:
 
 ```bash
 python capture_calibration_images.py
