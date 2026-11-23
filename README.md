@@ -1,5 +1,5 @@
 # Fly_High
-complete guide form ground based tracking to autonomous areal based drone tracking.
+complete guide form ground based tracking to autonomous areal based drone tracking.(for information check the pdf file attached above)
 ## Overview
 
 Camera calibration is the process of estimating the parameters of a camera's lens and image sensor. These parameters can be used to correct for lens distortion, measure the size of an object in world units, or determine the location of the camera in the scene.
